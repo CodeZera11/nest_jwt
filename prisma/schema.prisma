@@ -12,7 +12,7 @@ datasource db {
 
 model User{
   id              Int @unique @default(autoincrement())
-  email           String
+  email           String @unique
   hashedPassword  String
 
   createdAt       DateTime @default(now())
